@@ -20,7 +20,6 @@ public class Main {
         System.out.println("Grades by Subject: ");
         for(String grade : grades.keySet()){
             total += grades.get(grade);
-            int temp = 20 - grade.length();
             System.out.printf("%-15s%10d",grade, grades.get(grade));
             System.out.println();
             if (grades.get(grade) >= highest){
